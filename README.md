@@ -1,158 +1,166 @@
-<p align="center">
-  <img src="https://www.mifrm.eu.cc/favicon.ico" width="96" alt="MiFRM Logo">
-</p>
-
-<h1 align="center">🚀 MiFRM Blogger Forum CDN</h1>
+🚀 MiFRM Blogger Forum CDN
 
 <p align="center">
-Cloudflare CDN • Optimized Assets • High Performance • Production Ready
-</p>
+  <img src="https://www.mifrm.eu.cc/favicon.ico" width="110" alt="MiFRM Blogger Forum Logo">
+</p><h1 align="center">MiFRM Blogger Forum CDN</h1><p align="center">
+<b>Cloudflare CDN</b> • <b>Optimized Assets</b> • <b>High Performance</b> • <b>Production Ready</b>
+</p><p align="center">
+<i>Biz En İyisini Yapana Kadar En İyisi Bu Dünya'da Eşi ve Benzeri Maalesef Yoktur.</i><br>
+<i>Until We Build the Best, There Is Unfortunately No Equal or Alternative in This World.</i>
+</p><p align="center">🇹🇷 <a href="#-türkçe">Türkçe</a> •
+🇬🇧 <a href="#-english">English</a>
 
-<p align="center">
-<strong>Biz En İyisini Yapana Kadar En İyisi Bu Dünya'da Eşi ve Benzeri Maalesef Yoktur.</strong><br>
-<strong>Until We Build the Best, There Is Unfortunately No Equal or Alternative in This World.</strong>
-</p>
+</p>---
 
-<p align="center">
-<a href="#-türkçe">🇹🇷 Türkçe</a> •
-<a href="#-english">🇬🇧 English</a>
-</p>
+🇹🇷 Türkçe
+
+MiFRM CDN, MiFRM Blogger Forum temasına ait optimize edilmiş tüm statik dosyaların yayınlandığı resmi içerik deposudur.
+
+Bu depo üzerinden yayınlanan tüm CSS, JavaScript, font, ikon ve görseller Cloudflare Global CDN altyapısı ile dünya genelinde yüksek performans ve düşük gecikme ile dağıtılmaktadır.
+
+Her sürüm yayınlanmadan önce performans, güvenlik, SEO, erişilebilirlik, tarayıcı uyumluluğu ve kod kalitesi açısından optimize edilir.
 
 ---
 
-# 🇹🇷 Türkçe
+🌐 Resmi Bağlantılar
 
-## MiFRM CDN
-
-Bu depo, MiFRM Blogger Forum temasına ait optimize edilmiş tüm statik dosyaları barındırmaktadır.
-
-Cloudflare CDN üzerinden yayınlanan CSS, JavaScript, font, ikon ve görseller bu depo üzerinden yönetilmektedir.
-
-Her sürüm performans, güvenlik, önbellekleme ve modern tarayıcı uyumluluğu açısından optimize edilerek yayınlanır.
+Servis| Adres
+🌍 Web Sitesi| https://www.mifrm.eu.cc
+🚀 CDN| https://cdn.mifrm.eu.cc
+💬 R10 Konusu| https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif-ettigi-ruya-modern-forum-engine-hikayesi.html
 
 ---
 
-## Resmi Adresler
+📦 Depo İçeriği
 
-### 🌐 Web Sitesi
-
-https://www.mifrm.eu.cc
-
-### 🚀 CDN
-
-https://cdn.mifrm.eu.cc
-
----
-
-## Depo İçeriği
-
-- Optimize Edilmiş CSS
-- Optimize Edilmiş JavaScript
+- Optimize Edilmiş CSS Dosyaları
+- Optimize Edilmiş JavaScript Dosyaları
 - Font Dosyaları
-- SVG İkonları
+- SVG İkon Kütüphanesi
 - WebP Görseller
-- Statik Dosyalar
 - CDN Dağıtım Dosyaları
+- Statik Kaynaklar
+- Tema Asset Dosyaları
 
 ---
 
-## Özellikler
+⚡ Özellikler
 
 - Cloudflare Edge CDN
 - HTTP/2
 - HTTP/3
+- Brotli Compression
 - Browser Cache
+- Edge Cache
 - Global CDN
-- Düşük Gecikme
-- Yüksek Performans
-- Mobil Uyumlu
-- SEO Dostu
+- Low Latency
+- Ultra Fast Delivery
+- Mobile First
+- SEO Friendly
+- Accessibility Ready
 - Production Ready
+- Modern Browser Support
+- Optimized Build
+- Clean Code Structure
 
 ---
 
-## Tema Hakkında
+🏆 MiFRM Blogger Forum
 
 MiFRM Blogger Forum;
 
-Modern Blogger altyapısı için geliştirilen profesyonel forum temasıdır.
+Modern Blogger altyapısı için geliştirilen profesyonel nesil forum temasıdır.
 
-Performans, erişilebilirlik, SEO, kullanıcı deneyimi ve sürdürülebilir kod yapısı esas alınarak geliştirilmektedir.
+Tema;
+
+- Performans
+- SEO
+- Erişilebilirlik
+- Kullanıcı Deneyimi
+- Modern UI/UX
+- Sürdürülebilir Kod Yapısı
+- Google Standartları
+- Mobil Öncelikli Tasarım
+
+esas alınarak geliştirilmektedir.
 
 ---
 
-## Ticari Lisans
+💼 Ticari Lisans
 
-**Tema:** MiFRM Blogger Forum
+Tema
 
-**Ticari Lisans Fiyatı:** **200.000 USD**
+MiFRM Blogger Forum
+
+Ticari Lisans
+
+200.000 USD
 
 ---
 
-## Geliştirme Hikâyesi
+📖 Geliştirme Hikâyesi
 
-Detaylı konu:
+Projenin gelişim sürecini aşağıdaki bağlantıdan inceleyebilirsiniz.
 
 https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif-ettigi-ruya-modern-forum-engine-hikayesi.html
 
 ---
 
-## CDN Kullanımı
+🚀 CDN Kullanımı
 
-```html
 <link rel="stylesheet" href="https://cdn.mifrm.eu.cc/theme-vb.css">
 
 <script src="https://cdn.mifrm.eu.cc/theme-vb.js"></script>
 
 ---
 
-İletişim
+👨‍💻 Geliştirici
 
 Hamdi Uludağ
 
 📧 xh.a.rx@hotmail.com
 
-🌐 https://www.mifrm.eu.cc
+🌍 https://www.mifrm.eu.cc
 
 ---
 
-Lisans
+📜 Lisans
 
 Copyright © MiFRM
 
 All Rights Reserved.
 
-Bu depoda bulunan tüm dosyalar telif hakkı ile korunmaktadır.
+Bu depoda bulunan tüm kaynak dosyaları telif hakkı ile korunmaktadır.
 
-İzinsiz kopyalanması, dağıtılması, değiştirilmesi veya ticari amaçla kullanılması yasaktır.
+Yazılı izin alınmadan;
+
+- Kopyalanamaz
+- Dağıtılamaz
+- Değiştirilemez
+- Ticari amaçla kullanılamaz
 
 ---
 
 🇬🇧 English
 
-MiFRM CDN
+MiFRM CDN is the official repository containing all optimized static assets used by the MiFRM Blogger Forum theme.
 
-This repository contains all optimized static assets used by the MiFRM Blogger Forum theme.
+CSS, JavaScript, fonts, SVG icons and images are globally delivered through Cloudflare CDN to ensure maximum speed, reliability and availability.
 
-CSS, JavaScript, fonts, icons and images are delivered globally through Cloudflare CDN for maximum performance and reliability.
-
-Every release is optimized before deployment to ensure production-ready quality.
+Every release is optimized before deployment for performance, security, accessibility, SEO and modern browser compatibility.
 
 ---
 
-Official Links
+🌐 Official Links
 
-🌐 Website
-
-https://www.mifrm.eu.cc
-
-🚀 CDN
-
-https://cdn.mifrm.eu.cc
+Service| Address
+🌍 Website| https://www.mifrm.eu.cc
+🚀 CDN| https://cdn.mifrm.eu.cc
+💬 Project Story| https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif-ettigi-ruya-modern-forum-engine-hikayesi.html
 
 ---
 
-Repository Contents
+📦 Repository Contents
 
 - Optimized CSS
 - Optimized JavaScript
@@ -161,49 +169,69 @@ Repository Contents
 - WebP Images
 - Static Assets
 - CDN Distribution Files
+- Theme Resources
 
 ---
 
-Features
+⚡ Features
 
 - Cloudflare Edge CDN
 - HTTP/2
 - HTTP/3
+- Brotli Compression
 - Browser Cache
+- Edge Cache
 - Global CDN
 - Low Latency
-- High Performance
+- Ultra Fast Delivery
 - Mobile Friendly
 - SEO Optimized
+- Accessibility Ready
 - Production Ready
+- Modern Browser Support
+- Optimized Build
+- Clean Code Structure
 
 ---
 
-About Theme
+🏆 About MiFRM Blogger Forum
 
-MiFRM Blogger Forum is a professional forum theme developed for the Blogger platform.
+MiFRM Blogger Forum is a professional next-generation forum theme developed exclusively for the Blogger platform.
 
-It is designed with performance, accessibility, SEO, maintainability and modern web standards in mind.
+The project is built around:
+
+- Performance
+- SEO
+- Accessibility
+- User Experience
+- Modern UI/UX
+- Maintainable Code
+- Google Best Practices
+- Mobile-First Design
 
 ---
+
+💼 Commercial License
+
+Theme
+
+MiFRM Blogger Forum
 
 Commercial License
 
-Theme: MiFRM Blogger Forum
-
-Commercial License Price: USD $200,000
+USD $200,000
 
 ---
 
-Project Story
+📖 Project Story
 
-Read the full story:
+Read the complete development story.
 
 https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif-ettigi-ruya-modern-forum-engine-hikayesi.html
 
 ---
 
-CDN Usage
+🚀 CDN Usage
 
 <link rel="stylesheet" href="https://cdn.mifrm.eu.cc/theme-vb.css">
 
@@ -211,27 +239,29 @@ CDN Usage
 
 ---
 
-Contact
+👨‍💻 Developer
 
 Hamdi Uludağ
 
 📧 xh.a.rx@hotmail.com
 
-🌐 https://www.mifrm.eu.cc
+🌍 https://www.mifrm.eu.cc
 
 ---
 
-License
+📜 License
 
 Copyright © MiFRM
 
 All Rights Reserved.
 
-Unauthorized copying, redistribution, modification or commercial use of any files contained in this repository is strictly prohibited without prior written permission.
+All files contained in this repository are protected by copyright law.
+
+No files may be copied, redistributed, modified or used commercially without prior written permission from the copyright owner.
 
 ---
 
 <p align="center">
-Made with ❤️ for MiFRM Blogger Forum
+<b>Made with ❤️ for MiFRM Blogger Forum</b><br><br><b>Cloudflare CDN • Optimized Assets • Production Ready • Global Edge Network</b>
+
 </p>
-```
