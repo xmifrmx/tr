@@ -5,8 +5,8 @@
 </p><p align="center">
 <i>Biz En İyisini Yapana Kadar En İyisi Bu Dünya'da Eşi ve Benzeri Maalesef Yoktur.</i><br>
 <i>Until We Build the Best, There Is Unfortunately No Equal or Alternative in This World.</i>
-</p><p align="center">🇹🇷 <a href="#-türkçe">Türkçe</a> •
-🇬🇧 <a href="#-english">English</a>
+</p><p align="center">🇹🇷 <a href="#türkçe">Türkçe</a> •
+🇬🇧 <a href="#english">English</a>
 
 </p>---
 
@@ -23,9 +23,19 @@ Her sürüm yayınlanmadan önce performans, güvenlik, SEO, erişilebilirlik, t
 🌐 Resmi Bağlantılar
 
 Servis| Adres
+
 🌍 Web Sitesi| https://www.mifrm.eu.cc
+
 🚀 CDN| https://cdn.mifrm.eu.cc
-💬 R10 Konusu| https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif-ettigi-ruya-modern-forum-engine-hikayesi.html
+
+💬 R10 Konusu| 
+
+https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif-ettigi-ruya-modern-forum-engine-hikayesi.html
+
+💬 Orjinal Konusu| 
+
+https://www.mifrm.eu.cc/2026/06/googlen-blogger-tema-icin-200000-teklif.html
+
 
 ---
 
