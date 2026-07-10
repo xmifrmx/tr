@@ -7,7 +7,7 @@
 <i>Until We Build the Best, There Is Unfortunately No Equal or Alternative in This World.</i>  
 </p><p align="center">🇹🇷 <a href="#türkçe">Türkçe</a> •  
 🇬🇧 <a href="#english">English</a> </p>
-
+<a id="turkce">
 MiFRM CDN, MiFRM Blogger Forum temasına ait optimize edilmiş tüm statik dosyaların yayınlandığı resmi içerik deposudur.
 
 Bu depo üzerinden yayınlanan tüm CSS, JavaScript, font, ikon ve görseller Cloudflare Global CDN altyapısı ile dünya genelinde yüksek performans ve düşük gecikme ile dağıtılmaktadır.
@@ -183,9 +183,9 @@ Değiştirilemez
 Ticari amaçla kullanılamaz
 
 
-
+</a>
 ---
-
+<a id="english">
 🇬🇧 English
 
 MiFRM CDN is the official repository containing all optimized static assets used by the MiFRM Blogger Forum theme.
@@ -343,6 +343,6 @@ No files may be copied, redistributed, modified or used commercially without pri
 
 
 ---
-
+</a>
 <p align="center">  
 <b>Made with ❤️ for MiFRM Blogger Forum</b><br><br><b>Cloudflare CDN • Optimized Assets • Production Ready • Global Edge Network</b>  </p>
