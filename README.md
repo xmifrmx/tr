@@ -173,6 +173,9 @@ Hamdi Uludağ
 
 🌍 https://www.mifrm.eu.cc
 
+<p align="center">
+  <img src="https://cdn.mifrm.eu.cc/favicon/imza.png" width="200" alt="MiFRM Blogger Forum Logo">
+</p>
 
 ---
 
