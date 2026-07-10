@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.mifrm.eu.cc/favicon.svg" width="110" alt="MiFRM Blogger Forum Logo">
+  <img src="https://www.mifrm.eu.cc/favicon/favicon.svg" width="110" alt="MiFRM Blogger Forum Logo">
 </p><h1 align="center">MiFRM Blogger Forum CDN</h1><p align="center">
 <b>Cloudflare CDN</b> • <b>Optimized Assets</b> • <b>High Performance</b> • <b>Production Ready</b>
 </p><p align="center">
