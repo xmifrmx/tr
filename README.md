@@ -6,7 +6,7 @@
 <i>Biz En İyisini Yapana Kadar En İyisi Bu Dünya'da Eşi ve Benzeri Maalesef Yoktur.</i><br>  
 <i>Until We Build the Best, There Is Unfortunately No Equal or Alternative in This World.</i>  
 </p><p align="center">🇹🇷 <a href="#türkçe">Türkçe</a> •  
-🇬🇧 <a href="#english">English</a>  </p>---  🇹🇷 Türkçe
+🇬🇧 <a href="#english">English</a> </p>
 
 MiFRM CDN, MiFRM Blogger Forum temasına ait optimize edilmiş tüm statik dosyaların yayınlandığı resmi içerik deposudur.
 
@@ -345,4 +345,4 @@ No files may be copied, redistributed, modified or used commercially without pri
 ---
 
 <p align="center">  
-<b>Made with ❤️ for MiFRM Blogger Forum</b><br><br><b>Cloudflare CDN • Optimized Assets • Production Ready • Global Edge Network</b>  </p>  İngilizce tıklayınca direk ingilizce alana inecek Türkçe diyince Zaten en başta düzenle ver hiçbir yazıyı değiştirme
+<b>Made with ❤️ for MiFRM Blogger Forum</b><br><br><b>Cloudflare CDN • Optimized Assets • Production Ready • Global Edge Network</b>  </p>
