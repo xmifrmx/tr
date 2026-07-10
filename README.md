@@ -1,17 +1,28 @@
-🚀 MiFRM CDN
 <p align="center">
   <img src="https://www.mifrm.eu.cc/favicon.ico" width="96" alt="MiFRM Logo">
 </p>
+
+<h1 align="center">🚀 MiFRM Blogger Forum CDN</h1>
+
 <p align="center">
-  <h1 align="center">MiFRM Blogger Forum CDN</h1>
-  <p align="center">
-    Cloudflare CDN • Optimized Assets • High Performance • Production Ready
-  </p>
-</p>---
+Cloudflare CDN • Optimized Assets • High Performance • Production Ready
+</p>
 
-🇹🇷 Türkçe
+<p align="center">
+<strong>Biz En İyisini Yapana Kadar En İyisi Bu Dünya'da Eşi ve Benzeri Maalesef Yoktur.</strong><br>
+<strong>Until We Build the Best, There Is Unfortunately No Equal or Alternative in This World.</strong>
+</p>
 
-MiFRM CDN
+<p align="center">
+<a href="#-türkçe">🇹🇷 Türkçe</a> •
+<a href="#-english">🇬🇧 English</a>
+</p>
+
+---
+
+# 🇹🇷 Türkçe
+
+## MiFRM CDN
 
 Bu depo, MiFRM Blogger Forum temasına ait optimize edilmiş tüm statik dosyaları barındırmaktadır.
 
@@ -21,19 +32,19 @@ Her sürüm performans, güvenlik, önbellekleme ve modern tarayıcı uyumluluğ
 
 ---
 
-Resmi Adresler
+## Resmi Adresler
 
-🌐 Web Sitesi
+### 🌐 Web Sitesi
 
 https://www.mifrm.eu.cc
 
-🚀 CDN
+### 🚀 CDN
 
 https://cdn.mifrm.eu.cc
 
 ---
 
-Depo İçeriği
+## Depo İçeriği
 
 - Optimize Edilmiş CSS
 - Optimize Edilmiş JavaScript
@@ -45,7 +56,7 @@ Depo İçeriği
 
 ---
 
-Özellikler
+## Özellikler
 
 - Cloudflare Edge CDN
 - HTTP/2
@@ -60,7 +71,7 @@ Depo İçeriği
 
 ---
 
-Tema Hakkında
+## Tema Hakkında
 
 MiFRM Blogger Forum;
 
@@ -70,15 +81,15 @@ Performans, erişilebilirlik, SEO, kullanıcı deneyimi ve sürdürülebilir kod
 
 ---
 
-Ticari Lisans
+## Ticari Lisans
 
-Tema: MiFRM Blogger Forum
+**Tema:** MiFRM Blogger Forum
 
-Ticari Lisans Fiyatı: 200.000 USD
+**Ticari Lisans Fiyatı:** **200.000 USD**
 
 ---
 
-Geliştirme Hikâyesi
+## Geliştirme Hikâyesi
 
 Detaylı konu:
 
@@ -86,8 +97,9 @@ https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif
 
 ---
 
-CDN Kullanımı
+## CDN Kullanımı
 
+```html
 <link rel="stylesheet" href="https://cdn.mifrm.eu.cc/theme-vb.css">
 
 <script src="https://cdn.mifrm.eu.cc/theme-vb.js"></script>
@@ -222,3 +234,4 @@ Unauthorized copying, redistribution, modification or commercial use of any file
 <p align="center">
 Made with ❤️ for MiFRM Blogger Forum
 </p>
+```
