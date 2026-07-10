@@ -97,32 +97,17 @@ document.addEventListener("DOMContentLoaded", function(){
     for(var i=0;i<opts.length;i++){
       var on=opts[i].getAttribute('data-vb-theme-value')===name;
       opts[i].classList.toggle('vb-active',on);
+      opts[i].setAttribute('aria-checked',on?'true':'false');
     }
   }
   document.addEventListener('DOMContentLoaded',function(){
     var saved='default';
     try{saved=localStorage.getItem('vbTheme')||'default';}catch(e){}
     applyTheme(saved,false);
-    var btn=document.getElementById('vbThemeBtn');
-    var menu=document.getElementById('vbThemeMenu');
-    if(!btn||!menu)return;
-    btn.addEventListener('click',function(e){
-      e.stopPropagation();
-      var open=menu.classList.toggle('vb-open');
-      btn.setAttribute('aria-expanded',open?'true':'false');
-    });
-    document.addEventListener('click',function(e){
-      if(!menu.contains(e.target)&&e.target!==btn){
-        menu.classList.remove('vb-open');
-        btn.setAttribute('aria-expanded','false');
-      }
-    });
-    var opts=menu.querySelectorAll('.vb-theme-opt');
+    var opts=document.querySelectorAll('.vb-theme-opt');
     for(var i=0;i<opts.length;i++){
       opts[i].addEventListener('click',function(){
         applyTheme(this.getAttribute('data-vb-theme-value'),true);
-        menu.classList.remove('vb-open');
-        btn.setAttribute('aria-expanded','false');
       });
     }
   });
