@@ -1,16 +1,28 @@
 <p align="center">
   <img src="https://cdn.mifrm.eu.cc/favicon/favicon.svg" width="110" alt="MiFRM Blogger Forum Logo">
-</p><h1 align="center">MiFRM Blogger Forum CDN</h1><p align="center">
+</p>
+
+<h1 align="center">MiFRM Blogger Forum CDN</h1>
+
+<p align="center">
 <b>Cloudflare CDN</b> • <b>Optimized Assets</b> • <b>High Performance</b> • <b>Production Ready</b>
-</p><p align="center">
+</p>
+
+<p align="center">
 <i>Biz En İyisini Yapana Kadar En İyisi Bu Dünya'da Eşi ve Benzeri Maalesef Yoktur.</i><br>
 <i>Until We Build the Best, There Is Unfortunately No Equal or Alternative in This World.</i>
-</p><p align="center">🇹🇷 <a href="#türkçe">Türkçe</a> •
+</p>
+
+<p align="center">
+🇹🇷 <a href="#turkce">Türkçe</a> •
 🇬🇧 <a href="#english">English</a>
+</p>
 
-</p>---
+---
 
-🇹🇷 Türkçe
+<a id="turkce"></a>
+
+# 🇹🇷 Türkçe
 
 MiFRM CDN, MiFRM Blogger Forum temasına ait optimize edilmiş tüm statik dosyaların yayınlandığı resmi içerik deposudur.
 
@@ -22,11 +34,10 @@ Her sürüm yayınlanmadan önce performans, güvenlik, SEO, erişilebilirlik, t
 
 🌐 Resmi Bağlantılar
 
-Servis| Adres
-
-🌍 Web Sitesi| https://www.mifrm.eu.cc
-
-🚀 CDN| https://cdn.mifrm.eu.cc
+| Servis | Adres |
+|--------|-------|
+| 🌍 Web Sitesi | https://www.mifrm.eu.cc |
+| 🚀 CDN | https://cdn.mifrm.eu.cc |
 
 💬 R10 Konusu ⬇️
 
@@ -35,7 +46,6 @@ https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif
 💬 Orjinal Konusu ⬇️
 
 https://www.mifrm.eu.cc/2026/06/googlen-blogger-tema-icin-200000-teklif.html
-
 
 ---
 
@@ -116,6 +126,7 @@ https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif
 
 🚀 CDN Kullanımı
 
+```html
 <link rel="stylesheet" href="https://cdn.mifrm.eu.cc/theme-vb.css">
 
 <script src="https://cdn.mifrm.eu.cc/theme-vb.js"></script>
@@ -148,6 +159,8 @@ Yazılı izin alınmadan;
 - Ticari amaçla kullanılamaz
 
 ---
+
+<a id="english"></a>
 
 🇬🇧 English
 
@@ -270,6 +283,9 @@ No files may be copied, redistributed, modified or used commercially without pri
 ---
 
 <p align="center">
-<b>Made with ❤️ for MiFRM Blogger Forum</b><br><br><b>Cloudflare CDN • Optimized Assets • Production Ready • Global Edge Network</b>
+<b>Made with ❤️ for MiFRM Blogger Forum</b><br><br>
+
+<b>Cloudflare CDN • Optimized Assets • Production Ready • Global Edge Network</b>
 
 </p>
+```
