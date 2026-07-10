@@ -97,32 +97,40 @@ document.addEventListener("DOMContentLoaded", function(){
     for(var i=0;i<opts.length;i++){
       var on=opts[i].getAttribute('data-vb-theme-value')===name;
       opts[i].classList.toggle('vb-active',on);
+      opts[i].setAttribute('aria-checked',on?'true':'false');
     }
+  }
+  function setMenu(box,toggle,menu,open){
+    box.classList.toggle('vb-theme-open',open);
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+    menu.setAttribute('aria-hidden',open?'false':'true');
   }
   document.addEventListener('DOMContentLoaded',function(){
     var saved='default';
     try{saved=localStorage.getItem('vbTheme')||'default';}catch(e){}
     applyTheme(saved,false);
-    var btn=document.getElementById('vbThemeBtn');
-    var menu=document.getElementById('vbThemeMenu');
-    if(!btn||!menu)return;
-    btn.addEventListener('click',function(e){
-      e.stopPropagation();
-      var open=menu.classList.toggle('vb-open');
-      btn.setAttribute('aria-expanded',open?'true':'false');
-    });
-    document.addEventListener('click',function(e){
-      if(!menu.contains(e.target)&&e.target!==btn){
-        menu.classList.remove('vb-open');
-        btn.setAttribute('aria-expanded','false');
-      }
-    });
-    var opts=menu.querySelectorAll('.vb-theme-opt');
+    var opts=document.querySelectorAll('.vb-theme-opt');
     for(var i=0;i<opts.length;i++){
       opts[i].addEventListener('click',function(){
         applyTheme(this.getAttribute('data-vb-theme-value'),true);
-        menu.classList.remove('vb-open');
-        btn.setAttribute('aria-expanded','false');
+        var box=this.closest('.vb-theme-box');
+        var toggle=box?box.querySelector('#vbThemeToggle'):null;
+        var menu=box?box.querySelector('#vbThemeMenu'):null;
+        if(box&&toggle&&menu)setMenu(box,toggle,menu,false);
+      });
+    }
+    var box=document.getElementById('vbThemeSwitch');
+    var toggle=document.getElementById('vbThemeToggle');
+    var menu=document.getElementById('vbThemeMenu');
+    if(box&&toggle&&menu){
+      toggle.addEventListener('click',function(){
+        setMenu(box,toggle,menu,!box.classList.contains('vb-theme-open'));
+      });
+      document.addEventListener('click',function(e){
+        if(box.classList.contains('vb-theme-open')&&!box.contains(e.target))setMenu(box,toggle,menu,false);
+      });
+      document.addEventListener('keydown',function(e){
+        if(e.key==='Escape'&&box.classList.contains('vb-theme-open')){setMenu(box,toggle,menu,false);toggle.focus();}
       });
     }
   });
@@ -204,13 +212,13 @@ document.addEventListener("DOMContentLoaded", function(){
 /* ============================================================
    BÖLÜM 4 — Bildirim, İstatistik, Forum Listesi Çekirdeği
    ============================================================ */
-var VB_NOTIF_KEY="vbN3";var VB_TOKEN_KEY="vbToken";var VB_TOKEN_EXP="vbTokenExp";var VB_TTL=43200000;var VB_PER_PAGE=10;var _vbAllPosts=[];var _vbShown=MFG("home.topicsCount",10);var _cmtShown=MFG("home.repliesCount",10);var _cmtAllEntries=[];var _cmtTopics=[];var _vbTimer=null;var _avatarCache={};function safeText(t){if(t==null)return"";var d=document.createElement("div");d.textContent=String(t);return d.innerHTML;}
+var VB_NOTIF_KEY="vbN3";var VB_TOKEN_KEY="vbToken";var VB_TOKEN_EXP="vbTokenExp";var VB_TTL=43200000;var VB_PER_PAGE=10;var _vbAllPosts=[];var _vbShown=MFG("home.topicsCount",10);var _cmtShown=MFG("home.repliesCount",10);var _cmtAllEntries=[];var _cmtTopics=[];var _vbTimer=null;var _avatarCache={};var VB_MONTHS_TR=["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"];function safeText(t){if(t==null)return"";var d=document.createElement("div");d.textContent=String(t);return d.innerHTML;}
 function cleanAuthor(n){if(!n||n==="Anonymous"||n==="İsimsiz"||n==="anonymous")return"Misafir";return String(n);}
 function pad2(n){return(""+n).padStart(2,"0");}
 function formatDate(iso){if(!iso)return"";var d=new Date(iso);if(isNaN(d.getTime()))return String(iso);var now=new Date();if(d.toDateString()===now.toDateString()){return"Bugün "+pad2(d.getHours())+":"+pad2(d.getMinutes());}
-var months=["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"];return d.getDate()+" "+months[d.getMonth()]+" "+d.getFullYear()
+return d.getDate()+" "+VB_MONTHS_TR[d.getMonth()]+" "+d.getFullYear()
 +", "+pad2(d.getHours())+":"+pad2(d.getMinutes());}
-function formatDateShort(iso){if(!iso)return"—";var d=new Date(iso);if(isNaN(d.getTime()))return"—";var months=["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"];return d.getDate()+" "+months[d.getMonth()]+" "+d.getFullYear();}
+function formatDateShort(iso){if(!iso)return"—";var d=new Date(iso);if(isNaN(d.getTime()))return"—";return d.getDate()+" "+VB_MONTHS_TR[d.getMonth()]+" "+d.getFullYear();}
 function getAltLink(entry){if(!entry||!Array.isArray(entry.link))return null;for(var i=0;i<entry.link.length;i++){if(entry.link[i].rel==="alternate")return entry.link[i];}
 return null;}
 function getAuthorName(entry){try{return cleanAuthor(entry.author[0].name.$t);}catch(e){return"Misafir";}}
@@ -1035,126 +1043,7 @@ document.addEventListener('DOMContentLoaded',function(){
 //
 
 /* ============================================================
-   BÖLÜM 9 — PWA: Açılış (Splash) Ekranı + Uygulama Yükleme Bannerı
-   ============================================================ */
-(function(){
-'use strict';
-var PWA_DISMISS_KEY='vbPwaDismissedUntil';
-var PWA_INSTALLED_KEY='vbPwaInstalled';
-var deferredPrompt=null;
-
-function isStandalone(){
-  try{
-    return window.matchMedia('(display-mode: standalone)').matches ||
-           window.navigator.standalone === true;
-  }catch(e){ return false; }
-}
-function isPermanentlyDismissed(){
-  try{ return localStorage.getItem(PWA_INSTALLED_KEY)==='1'; }catch(e){ return false; }
-}
-function isTemporarilyDismissed(){
-  try{
-    var until=parseInt(localStorage.getItem(PWA_DISMISS_KEY)||'0',10);
-    return Date.now() < until;
-  }catch(e){ return false; }
-}
-function isIos(){
-  return /iphone|ipad|ipod/i.test(navigator.userAgent||'');
-}
-function isSafari(){
-  var ua=navigator.userAgent||'';
-  return /safari/i.test(ua) && !/crios|fxios|edgios|chrome|android/i.test(ua);
-}
-
-/* --- Splash ekranını kapat --- */
-function hideSplash(){
-  var el=document.getElementById('vb-splash');
-  if(!el)return;
-  el.classList.add('vb-splash-hide');
-  setTimeout(function(){ if(el&&el.parentNode) el.style.display='none'; },400);
-}
-if(document.readyState==='complete'){
-  hideSplash();
-}else{
-  window.addEventListener('load',hideSplash);
-  /* Güvenlik ağı: herhangi bir sebeple 'load' hiç tetiklenmezse
-     3 sn sonra yine de kapat, kullanıcı sonsuza dek splash'ta kalmasın. */
-  setTimeout(hideSplash,3000);
-}
-
-/* --- Uygulama yükleme bannerı --- */
-function showPwaBanner(){
-  if(isStandalone()||isPermanentlyDismissed()||isTemporarilyDismissed())return;
-  var el=document.getElementById('vbPwaBanner');
-  if(!el)return;
-  if(isIos()&&isSafari()&&!deferredPrompt){
-    var descEl=document.getElementById('vbPwaBannerDesc');
-    var btn=document.getElementById('vbPwaInstallBtn');
-    if(descEl)descEl.textContent='Paylaş düğmesine dokunun, ardından "Ana Ekrana Ekle" seçeneğini seçin.';
-    if(btn)btn.style.display='none';
-  }
-  setTimeout(function(){
-    el.setAttribute('aria-hidden','false');
-    el.classList.add('vb-pwa-show');
-  },600);
-}
-
-window.addEventListener('beforeinstallprompt',function(e){
-  e.preventDefault();
-  deferredPrompt=e;
-  showPwaBanner();
-});
-
-window.addEventListener('appinstalled',function(){
-  try{ localStorage.setItem(PWA_INSTALLED_KEY,'1'); }catch(e){}
-  vbPwaHideBanner();
-});
-
-function vbPwaHideBanner(){
-  var el=document.getElementById('vbPwaBanner');
-  if(!el)return;
-  el.classList.remove('vb-pwa-show');
-  el.setAttribute('aria-hidden','true');
-}
-
-window.vbPwaInstall=function(){
-  if(deferredPrompt){
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then(function(choice){
-      if(choice&&choice.outcome==='accepted'){
-        try{ localStorage.setItem(PWA_INSTALLED_KEY,'1'); }catch(e){}
-      }else{
-        try{ localStorage.setItem(PWA_DISMISS_KEY, String(Date.now()+7*24*60*60*1000)); }catch(e){}
-      }
-      deferredPrompt=null;
-      vbPwaHideBanner();
-    }).catch(function(){ vbPwaHideBanner(); });
-  }else{
-    /* iOS Safari: native prompt yok, kullanıcı talimatı okudu, kapat. */
-    vbPwaHideBanner();
-  }
-};
-
-window.vbPwaDismiss=function(temporary){
-  try{
-    if(temporary){
-      localStorage.setItem(PWA_DISMISS_KEY, String(Date.now()+7*24*60*60*1000));
-    }else{
-      localStorage.setItem(PWA_DISMISS_KEY, String(Date.now()+365*24*60*60*1000));
-    }
-  }catch(e){}
-  vbPwaHideBanner();
-};
-
-/* iOS Safari'de beforeinstallprompt hiç tetiklenmediği için,
-   sayfa tamamen yüklendikten kısa bir süre sonra manuel kontrol et. */
-if(isIos()&&isSafari()){
-  window.addEventListener('load',function(){ setTimeout(showPwaBanner,1200); });
-}
-})();
-
-/* ============================================================
-   BÖLÜM 10 — Google Identity Services'i geciktirmeli (idle) yükle
+   BÖLÜM 9 — Google Identity Services'i geciktirmeli (idle) yükle
    ============================================================
    Script daha önce head'de senkron/async etiketle yükleniyordu.
    mifrmRenderUser() ve window.onGoogleLibraryLoad zaten script'in
