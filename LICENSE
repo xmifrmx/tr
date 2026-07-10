@@ -1,21 +1,68 @@
-MIT License
+MiFRM Proprietary Software License
+Version 1.0
+Copyright © 2026 Hamdi Uludağ
+All Rights Reserved.
 
-Copyright (c) 2026 Hamdi Uludağ 
+────────────────────────────────────────
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+🇹🇷 TÜRKÇE
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Bu depo ve içerisinde bulunan tüm kaynak kodları, CSS dosyaları, JavaScript dosyaları, görseller, ikonlar, fontlar, tasarımlar ve diğer tüm içerikler MiFRM'e aittir ve telif hakkı ile korunmaktadır.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Bu yazılım açık kaynak değildir.
+
+Yazılı izin alınmaksızın;
+
+• Kopyalanamaz.
+• Çoğaltılamaz.
+• Değiştirilemez.
+• Dağıtılamaz.
+• Yeniden yayınlanamaz.
+• Ticari amaçla kullanılamaz.
+• Başka projelerde kullanılamaz.
+• Türetilmiş çalışma oluşturulamaz.
+
+Bu depoya erişim sağlanması herhangi bir lisans hakkı vermez.
+
+Tüm fikri mülkiyet hakları Hamdi Uludağ'a aittir.
+
+İzinsiz kullanım durumunda yürürlükteki telif hakları ve fikri mülkiyet kanunları kapsamında yasal işlem uygulanabilir.
+
+────────────────────────────────────────
+
+🇬🇧 ENGLISH
+
+This repository and all source code, CSS files, JavaScript files, images, icons, fonts, designs and all other contents are proprietary property of MiFRM and are protected by international copyright laws.
+
+This software is NOT open source.
+
+Without prior written permission you may NOT:
+
+• Copy
+• Modify
+• Redistribute
+• Republish
+• Sell
+• Commercially use
+• Integrate into another project
+• Create derivative works
+
+Access to this repository does not grant ownership, copyright or licensing rights.
+
+All intellectual property rights remain exclusively owned by Hamdi Uludağ.
+
+Unauthorized use may result in civil and criminal penalties under applicable copyright and intellectual property laws.
+
+────────────────────────────────────────
+
+Official Website
+https://www.mifrm.eu.cc
+
+Official CDN
+https://cdn.mifrm.eu.cc
+
+Developer
+Hamdi Uludağ
+
+Copyright © 2026 MiFRM
+All Rights Reserved.
