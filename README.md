@@ -28,11 +28,11 @@ Servis| Adres
 
 🚀 CDN| https://cdn.mifrm.eu.cc
 
-💬 R10 Konusu| 
+💬 R10 Konusu ⬇️
 
 https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif-ettigi-ruya-modern-forum-engine-hikayesi.html
 
-💬 Orjinal Konusu| 
+💬 Orjinal Konusu ⬇️
 
 https://www.mifrm.eu.cc/2026/06/googlen-blogger-tema-icin-200000-teklif.html
 
