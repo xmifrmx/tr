@@ -40,12 +40,12 @@ window.MIFRM_CONFIG = {
   /* 7) ALT BİLGİ (FOOTER) LİNKLERİ — her birinin yönlendireceği adres.
      "#" bırakırsanız link pasif kalır. */
   footer: {
-    privacy: "#",                                                    /* Gizlilik Politikası */
-    kvkk:    "#",                                                    /* KVKK */
-    refund:  "#",                                                    /* Teslimat ve İade Şartları */
-    rules:   "https://mifrm.blogspot.com/2026/06/forum-kurallar.html", /* Forum Kuralları */
-    terms:   "#",                                                    /* Kullanım Sözleşmesi */
-    contact: "#"                                                     /* İletişim */
+    privacy: "https://cdn.mifrm.eu.cc/#turkce",                                                    /* Gizlilik Politikası */
+    kvkk:    "https://cdn.mifrm.eu.cc/#turkce",                                                    /* KVKK */
+    refund:  "https://cdn.mifrm.eu.cc/#turkce",                                                    /* Teslimat ve İade Şartları */
+    rules:   "https://mifrm.blogspot.com/2026/06/forum-kurallar.html",                             /* Forum Kuralları */
+    terms:   "https://cdn.mifrm.eu.cc/#turkce",                                                    /* Kullanım Sözleşmesi */
+    contact: "https://cdn.mifrm.eu.cc/#turkce"                                                     /* İletişim */
   },
 
   /* 8) DIŞ LİNK YÖNLENDİRME SAYACI — forum dışı linke tıklayınca
