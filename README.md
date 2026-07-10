@@ -1,5 +1,3 @@
-🚀 MiFRM Blogger Forum CDN
-
 <p align="center">
   <img src="https://www.mifrm.eu.cc/favicon.ico" width="110" alt="MiFRM Blogger Forum Logo">
 </p><h1 align="center">MiFRM Blogger Forum CDN</h1><p align="center">
