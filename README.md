@@ -8,7 +8,7 @@
   
 </p><p align="center">🇹🇷 <a href="#türkce">Türkçe</a>  •  🇬🇧 <a href="#english">English</a> </p>
 
-<a id="#turkce">
+<a id="turkce">
 MiFRM CDN, MiFRM Blogger Forum temasına ait optimize edilmiş tüm statik dosyaların yayınlandığı resmi içerik deposudur.
 
 Bu depo üzerinden yayınlanan tüm CSS, JavaScript, font, ikon ve görseller Cloudflare Global CDN altyapısı ile dünya genelinde yüksek performans ve düşük gecikme ile dağıtılmaktadır.
@@ -186,7 +186,7 @@ Ticari amaçla kullanılamaz
 
 </a>
 ---
-<a id="#english">
+<a id="english">
 🇬🇧 English
 
 MiFRM CDN is the official repository containing all optimized static assets used by the MiFRM Blogger Forum theme.
