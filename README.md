@@ -30,6 +30,8 @@
 <ul>
   <li>🌍 <b>Web Sitesi:</b> <a href="https://www.mifrm.eu.cc">https://www.mifrm.eu.cc</a></li>
   <li>🚀 <b>CDN:</b> <a href="https://cdn.mifrm.eu.cc">https://cdn.mifrm.eu.cc</a></li>
+  <li>🗺️ <b>Sitemap:</b> <a href="https://cdn.mifrm.eu.cc/sitemap.xml">https://cdn.mifrm.eu.cc/sitemap.xml</a></li>
+  <li>📄 <b>Post Sitemap:</b> <a href="https://cdn.mifrm.eu.cc/post-sitemap1.xml">https://cdn.mifrm.eu.cc/post-sitemap1.xml</a></li>
   <li>💬 <b>R10 Konusu:</b> <a href="https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif-ettigi-ruya-modern-forum-engine-hikayesi.html">İncele</a></li>
   <li>💬 <b>Orjinal Konusu:</b> <a href="https://www.mifrm.eu.cc/2026/06/googlen-blogger-tema-icin-200000-teklif.html">İncele</a></li>
 </ul>
@@ -66,6 +68,8 @@
 <ul>
   <li>🌍 <b>Website:</b> <a href="https://www.mifrm.eu.cc">https://www.mifrm.eu.cc</a></li>
   <li>🚀 <b>CDN:</b> <a href="https://cdn.mifrm.eu.cc">https://cdn.mifrm.eu.cc</a></li>
+  <li>🗺️ <b>Sitemap:</b> <a href="https://cdn.mifrm.eu.cc/sitemap.xml">https://cdn.mifrm.eu.cc/sitemap.xml</a></li>
+  <li>📄 <b>Post Sitemap:</b> <a href="https://cdn.mifrm.eu.cc/post-sitemap1.xml">https://cdn.mifrm.eu.cc/post-sitemap1.xml</a></li>
   <li>💬 <b>Project Story:</b> <a href="https://www.r10.net/blogger/4798893-google-cuin-blogger-tema-icin-200-000-teklif-ettigi-ruya-modern-forum-engine-hikayesi.html">Read Now</a></li>
 </ul>
 
