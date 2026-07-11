@@ -71,18 +71,15 @@ def fetch_with_retry(url: str) -> requests.Response:
 
 
 def normalize_url(raw_url: str) -> str:
-    """Blogger link'lerini kaynak domain -> hedef (cdn) domain'e cevirir."""
+    """Sadece http -> https donusumu yapar. Sitemap dosyasi cdn.mifrm.eu.cc'de
+    barinsa da, icindeki <loc> adresleri GERCEK icerigin durdugu
+    www.mifrm.eu.cc'yi göstermelidir (Blogger icerigi orada yayinlaniyor,
+    cdn sadece sitemap dosyalarini sunuyor). Bu yuzden domain DEGISTIRILMEZ."""
     if not raw_url:
         return ""
     raw_url = raw_url.strip()
-    # http -> https
     if raw_url.startswith("http://"):
         raw_url = "https://" + raw_url[len("http://"):]
-    # kaynak domain varyasyonlarini hedef domain ile degistir
-    for host in ("https://www.mifrm.eu.cc", "https://mifrm.eu.cc", "http://www.mifrm.eu.cc"):
-        if raw_url.startswith(host):
-            raw_url = TARGET_HOST + raw_url[len(host):]
-            break
     return raw_url
 
 
