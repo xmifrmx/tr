@@ -26,7 +26,7 @@
 <body>
 <header>
   <h1>MiFRM &#8212; XML Sitemap</h1>
-  <p>WordPress uyumlu otomatik sitemap &#8212; GitHub Actions ile üretildi</p>
+  <p>Mifrm Auto Sitemap &#8212; Actions ile otomatik olarak üretildi</p>
 </header>
 <main>
 <p class="count"><xsl:value-of select="count(sitemap:urlset/sitemap:url)"/> URL listeleniyor</p>
