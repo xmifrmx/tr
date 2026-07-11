@@ -2,8 +2,11 @@ name: MiFRM Sitemap - Otomatik Uret ve Yayinla
 
 on:
   schedule:
-    # Gunde uc kez calisir (UTC). Ihtiyaca gore sikligi degistirebilirsiniz.
-    - cron: "0 3,9,15 * * *"
+    # Gunde 3 kez: sabah / ogle / aksam (Turkiye saati, UTC+3)
+    # 06:00 TR = 03:00 UTC | 12:00 TR = 09:00 UTC | 18:00 TR = 15:00 UTC
+    - cron: "0 3 * * *"    # sabah 06:00 (TR)
+    - cron: "0 9 * * *"    # ogle 12:00 (TR)
+    - cron: "0 15 * * *"   # aksam 18:00 (TR)
   workflow_dispatch: {}    # Actions sekmesinden manuel tetikleme
   push:
     branches: [ "main" ]
@@ -35,13 +38,17 @@ jobs:
       - name: Bagimliliklari yukle
         run: pip install -r scripts/requirements.txt
 
-      - name: Yayin klasorunu hazirla
+      - name: Yayin klasorunu hazirla (repodaki TUM statik dosyalar dahil)
         run: |
           mkdir -p site
-          cp robots.txt site/robots.txt
-          cp CNAME site/CNAME
-          cp sitemap.xsl site/sitemap.xsl
-          cp sitemap-index.xsl site/sitemap-index.xsl
+          # .git, .github ve scripts disindaki her seyi (tema css/js, google
+          # dogrulama dosyasi, robots.txt, CNAME, xsl'ler, vb.) kopyala.
+          # Yeni bir statik dosya eklerseniz otomatik dahil olur, tek tek
+          # isim yazmaya gerek kalmaz.
+          shopt -s extglob dotglob
+          for item in !(.git|.github|scripts|site); do
+            cp -r "$item" site/ 2>/dev/null || true
+          done
 
       - name: Sitemap uret (Blogger RSS -> WordPress uyumlu XML)
         working-directory: site
