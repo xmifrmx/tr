@@ -1,0 +1,81 @@
+name: MiFRM Sitemap - Otomatik Uret ve Yayinla
+
+on:
+  schedule:
+    # Her saat basi calisir (UTC). Ihtiyaca gore sikligi degistirebilirsiniz.
+    - cron: "0 * * * *"
+  workflow_dispatch: {}    # Actions sekmesinden manuel tetikleme
+  push:
+    branches: [ "main" ]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/update-sitemap.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodu checkout et
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bagimliliklari yukle
+        run: pip install -r scripts/requirements.txt
+
+      - name: Yayin klasorunu hazirla
+        run: |
+          mkdir -p site
+          cp robots.txt site/robots.txt
+          cp CNAME site/CNAME
+          cp sitemap.xsl site/sitemap.xsl
+          cp sitemap-index.xsl site/sitemap-index.xsl
+
+      - name: Sitemap uret (Blogger RSS -> WordPress uyumlu XML)
+        working-directory: site
+        run: python ../scripts/generate_sitemap.py
+
+      - name: Uretilen dosyalari dogrula (sifir hata garantisi)
+        working-directory: site
+        run: |
+          set -e
+          test -f sitemap.xml || { echo "HATA: sitemap.xml uretilmedi"; exit 1; }
+          python -c "import xml.etree.ElementTree as ET, glob, sys
+          files = glob.glob('*.xml')
+          assert files, 'Hic XML dosyasi bulunamadi'
+          for f in files:
+              try:
+                  ET.parse(f)
+                  print(f'OK  -> {f}')
+              except ET.ParseError as e:
+                  print(f'BOZUK XML -> {f}: {e}')
+                  sys.exit(1)
+          "
+
+      - name: Pages artifact yukle
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: GitHub Pages'e deploy et
+        id: deployment
+        uses: actions/deploy-pages@v4
