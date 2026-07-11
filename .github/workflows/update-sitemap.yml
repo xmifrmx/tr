@@ -2,8 +2,8 @@ name: MiFRM Sitemap - Otomatik Uret ve Yayinla
 
 on:
   schedule:
-    # Her saat basi calisir (UTC). Ihtiyaca gore sikligi degistirebilirsiniz.
-    - cron: "0 * * * *"
+    # Gunde uc kez calisir (UTC). Ihtiyaca gore sikligi degistirebilirsiniz.
+    - cron: "0 3,9,15 * * *"
   workflow_dispatch: {}    # Actions sekmesinden manuel tetikleme
   push:
     branches: [ "main" ]
