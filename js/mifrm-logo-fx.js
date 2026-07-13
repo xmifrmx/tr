@@ -1,28 +1,3 @@
-/* ==========================================================================
-   MiFRM — Logo Enerji Halkası Efekti (v3.0)
-   --------------------------------------------------------------------------
-   Gönderdiğin ekran kaydını inceledim: webailesi.com'daki efekt aslında
-   logonun etrafında SÜREKLİ DÖNEN, kuyruğu sönümlenen (comet-tail) ince bir
-   IŞIK HALKASI. Karınca/parçacık değil — dairesel/oval bir çerçevenin
-   üzerinde gezinen tek bir parlaklık huzmesi. Bu sürüm TAM OLARAK o efekti,
-   MiFRM'in metin logosunun etrafına uygulanmış hâliyle üretir.
-
-   Neden bu sürüm daha da "ultra profesyonel": eski canvas + rAF + parçacık
-   sistemi tamamen kaldırıldı. Bu efekt SAF CSS (conic-gradient + mask +
-   transform: rotate) ile çalışıyor:
-     - Sıfır yeni DOM elemanı (canvas YOK) — sadece mevcut logo linkine
-       bir CSS sınıfı ekleniyor, halka o linkin ::before'u olarak çiziliyor.
-     - Animasyon tamamen GPU/compositor thread üzerinde döner (transform),
-       ana thread'e (JS) hiçbir per-frame maliyeti yoktur -> gerçek 60 FPS,
-       Core Web Vitals'a etkisi sıfıra yakın.
-     - "10 saniyede bir farklı rota/renk/hız": JS sadece 10 saniyede bir
-       birkaç CSS custom property'yi günceller (renk tonu, halka kuyruğu
-       uzunluğu, dönüş hızı, dönüş yönü) — animasyonun kendisi kesintisiz
-       akar, JS'in animasyona hiç karışmasına gerek kalmaz.
-   * Temanın HTML (Mifrm-tema.xml), CSS (theme-vb.css) ve JS (theme-vb.js)
-     dosyalarına dokunulmuyor; bu dosya tamamen ek (additive) bir modüldür.
-   * Kütüphane / CDN yok. Sadece Vanilla JS (ES2025) + CSS.
-   ========================================================================== */
 (function () {
   "use strict";
 
