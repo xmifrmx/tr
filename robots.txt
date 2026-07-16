@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://cdn.mifrm.eu.cc/sitemap.xml
